@@ -39,7 +39,7 @@ function showHeader(data) {
     $(".header").append(`
         <div class="header_icon_wrapper">
             <div class="header_bar">
-                <div class="svg_icon_wrapper">
+                <div class="svg_icon_wrapper" style="display: none;">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M17.0178 18.0354C17.0178 14.509 17.0695 10.9858 17.0037 7.4578C16.9348 3.76535 19.7186 1.87134 22.5165 1.94184C27.2649 2.05933 32.0195 1.9716 36.7725 1.97317C39.9668 1.97317 42.0378 4.06143 42.0394 7.27764C42.0394 12.0818 42.0394 16.8861 42.0394 21.6903C42.0394 24.8955 39.9824 26.9759 36.7552 26.99C32.6304 27.0088 28.504 26.9806 24.3792 27.0151C23.899 27.0332 23.434 27.1875 23.0382 27.46C21.7755 28.3389 20.563 29.2882 19.3332 30.2141C18.8444 30.5822 18.351 30.9551 17.6993 30.6261C17.0476 30.2971 17.0178 29.6971 17.0178 29.0767C17.0199 25.3984 17.0199 21.7179 17.0178 18.0354ZM19.3677 27.2423C20.3703 26.4903 21.2178 25.8871 22.0309 25.2354C22.5384 24.8245 23.1784 24.6128 23.8309 24.6401C28.009 24.6589 32.1871 24.6495 36.3636 24.648C38.7714 24.648 39.6957 23.7331 39.6957 21.3581V7.56433C39.6957 5.25674 38.7699 4.31992 36.4889 4.31992H22.7029C20.2982 4.31992 19.3739 5.23168 19.3724 7.60976C19.3724 13.826 19.3724 20.0401 19.3724 26.2522L19.3677 27.2423Z"
@@ -68,11 +68,11 @@ function showHeader(data) {
         ToBot("help", {})
     });
 
-    $(".profile_section").click(function (e) {
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        loadProfileOptions();
-    });
+    // $(".profile_section").click(function (e) {
+    //     e.stopPropagation();
+    //     e.stopImmediatePropagation();
+    //     loadProfileOptions();
+    // });
 
     $(document).on("click", ".order_card", function (e) {
         e.stopPropagation();
