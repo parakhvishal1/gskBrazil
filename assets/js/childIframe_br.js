@@ -175,6 +175,17 @@ window.addEventListener('message', function (eventData) {
         console.log('Event Data---', data);
     }
 
+    if (parsedEventData.event_code === "continue-brandselection" && parsedEventData.data) {
+        document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({
+            event_code: 'continue-brandselection',                                                // added new event name
+            data: 'data'
+        }), '*');
+        let eventName = parsedEventData.event_code;
+    
+        console.log("eventName---", eventName);
+        
+    }
+
     if (parsedEventData.event_code === "confirmorderon-bot" && parsedEventData.data) {
         document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({
             event_code: 'confirmorderon-bot',                                                // added new event name

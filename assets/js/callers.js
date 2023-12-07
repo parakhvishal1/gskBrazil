@@ -312,7 +312,9 @@ function ToApp(eventName, data, orgData) {
         case "legal-copyright":
             // addLegalCopyright(data);
             break;
-    
+        case "continue-brandselection":
+            loadBrandSelectionUI(data);
+            break;    
         default:
             break;
     }
@@ -439,6 +441,18 @@ window.addEventListener('message', function (eventData) {
         console.log('reload parse data', data)
         ToApp("get-data-on-refresh", JSON.parse(data));
     }
+
+    if (parsedEventData.event_code === "continue-brandselection" && parsedEventData.data) {
+        let eventName = parsedEventData.event_code;
+        let data = 'data';
+        console.log("eventName---", eventName);
+        console.log('refreshed local storage data in caller.js', data);
+        console.log('reload parse data', data)
+        
+       
+        ToApp("continue-brandselection", data);
+    }
+
 
 
 });

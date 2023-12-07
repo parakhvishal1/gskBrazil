@@ -278,7 +278,7 @@ function showSkuLevelDetailsBrand(data, currentSku, requestType, requestSku) {
                 }
             })
             if (isDateSelectedforNewOrder) {
-                loadBrandSelectionUI(window.dataStore);
+                //loadBrandSelectionUI(window.dataStore);
                 let nwData = {
                     ...window.dataStore,
                     "appstate": {
@@ -755,7 +755,7 @@ function showBrandLevelDetails(data, currentSku, requestType, requestSku) {
                 }
             })
             if (isDateSelectedforNewOrder) {
-                loadBrandSelectionUI(parseData);
+                //loadBrandSelectionUI(parseData);
                 let nwData = {
                     ...parseData,
                     "appstate": {

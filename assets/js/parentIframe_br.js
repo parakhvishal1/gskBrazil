@@ -974,12 +974,13 @@ window.addEventListener('message', function (eventData) {
             }, true);
             return;
         }
-
-
     }
 
-
-
-
+    if (parsedData?.event_code == 'custom-event' && parsedData?.data?.code == "continue-brandselection") {
+        document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
+            event_code: 'continue-brandselection',
+            data: 'data'
+        }), '*');
+    }
 
 }, false);
