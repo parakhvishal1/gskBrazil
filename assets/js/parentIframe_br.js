@@ -977,9 +977,10 @@ window.addEventListener('message', function (eventData) {
     }
 
     if (parsedData?.event_code == 'custom-event' && parsedData?.data?.code == "continue-brandselection") {
+        console.log(parsedEventData.event_code,"event-Name--->")
         document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
             event_code: 'continue-brandselection',
-            data: 'data'
+            data: parsedData.data.data
         }), '*');
     }
 

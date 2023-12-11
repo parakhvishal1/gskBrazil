@@ -444,7 +444,7 @@ window.addEventListener('message', function (eventData) {
 
     if (parsedEventData.event_code === "continue-brandselection" && parsedEventData.data) {
         let eventName = parsedEventData.event_code;
-        let data = 'data';
+        let data = parsedEventData.data;
         console.log("eventName---", eventName);
         console.log('refreshed local storage data in caller.js', data);
         console.log('reload parse data', data)
