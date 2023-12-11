@@ -980,7 +980,7 @@ window.addEventListener('message', function (eventData) {
         console.log(parsedData.event_code,"event-Name--->")
         document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
             event_code: 'continue-brandselection',
-            data: parsedData.data
+            data: parsedData.data.data
         }), '*');
     }
 
