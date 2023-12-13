@@ -1,6 +1,7 @@
 /* Header Start */
 .header {
     height: 76px;
+    /*display: none;*/
 }
 
 .header .header_icon_wrapper {
@@ -12,7 +13,7 @@
 .header .header_icon_wrapper .header_bar {
     display: flex;
     justify-content: space-between;
-    flex-direction: revert-layer;
+    flex-direction: row-reverse;
     height: 44px;
 }
 
