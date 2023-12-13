@@ -27,7 +27,7 @@ function showHeader(data) {
     $(".header").empty();
     function showUserCreds(user) {
         return `
-            <div class="profile_section" tabindex=0>
+            <div class="profile_section hide" tabindex=0>
                 <div class="block">
                     <div class="name">${user.name}</div>
                     <!-- <div class="icon"><img class="arrow-down" src="/gskBrazil/assets/images/svg/down.svg" /></div> -->
