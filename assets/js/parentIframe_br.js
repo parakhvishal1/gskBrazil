@@ -98,7 +98,7 @@ window.addEventListener('message', function (eventData) {
         document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
             event_code: 'attach',
             data: 'data'
-        }), '*');
+        }), 'https://r5.cloud.yellow.ai');
         console.log("---Attach---");
         return;
 
@@ -114,7 +114,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'welcome-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("welcome-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -124,7 +124,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'welcome-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("welcome-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -141,7 +141,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'termsui-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("termsui-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -149,7 +149,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'termsui-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("termsui-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -166,7 +166,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'legal-copyright',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("legal-copyright")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -174,7 +174,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'legal-copyright',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("legal-copyright")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -193,7 +193,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'userwelcome-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("userwelcome-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -201,7 +201,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'userwelcome-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("userwelcome-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -217,7 +217,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'user-login',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("user-login")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -225,7 +225,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'user-login',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("user-login")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -242,7 +242,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'ordercart-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("ordercart-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -250,7 +250,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'ordercart-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("ordercart-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -267,7 +267,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'load-userwelcome-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("load-userwelcome-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -275,7 +275,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'load-userwelcome-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("load-userwelcome-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -292,7 +292,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'show-brand-selection',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("show-brand-selection")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -300,7 +300,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'show-brand-selection',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("show-brand-selection")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -317,7 +317,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'show-brand-detailing',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("show-brand-detailing")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -325,7 +325,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'show-brand-detailing',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("show-brand-detailing")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -343,7 +343,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'orderhistory-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("orderhistory-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -351,7 +351,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'orderhistory-screen',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("orderhistory-screen")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -368,7 +368,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'confirmorderon-bot',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("confirmorderon-bot")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -376,7 +376,7 @@ window.addEventListener('message', function (eventData) {
             document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                 event_code: 'confirmorderon-bot',
                 data: parsedData.data.data
-            }), '*');
+            }), 'https://r5.cloud.yellow.ai');
             console.log("confirmorderon-bot")
             console.log('Event Data-->>', parsedData.data.data)
             return;
@@ -400,13 +400,13 @@ window.addEventListener('message', function (eventData) {
                     document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                         event_code: 'bot-reloaded',
                         data: data
-                    }), '*');
+                    }), 'https://r5.cloud.yellow.ai');
                 } else {
                     injectDynamicCssForMobileBot();
                     document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                         event_code: 'bot-reloaded',
                         data: data
-                    }), '*');
+                    }), 'https://r5.cloud.yellow.ai');
 
                 }
 
@@ -414,7 +414,7 @@ window.addEventListener('message', function (eventData) {
                 document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
                     event_code: 'bot-reloaded',
                     data: data
-                }), '*');
+                }), 'https://r5.cloud.yellow.ai');
             }
 
 
@@ -981,7 +981,7 @@ window.addEventListener('message', function (eventData) {
         document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
             event_code: 'continue-brandselection',
             data: parsedData.data.data
-        }), '*');
+        }), 'https://r5.cloud.yellow.ai');
     }
 
 }, false);
