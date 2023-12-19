@@ -12,6 +12,10 @@
         // CallScreen(1);
         // CallScreen(4);
     }, 500);
+    console.log("Origin Vishal---->",window.location.origin); 
+    console.log("Protocol Vishal---->",window.location.protocol);
+    console.log("Hostname Vishal---->",window.location.hostname);
+    console.log("Port Vishal---->",window.location.port); 
 })();
 
 function GlobalVarInit(data) {
