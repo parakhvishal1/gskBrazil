@@ -203,6 +203,7 @@ window.addEventListener('message', function (eventData) {
                 data: parsedData.data.data
             }), '*');
             console.log("userwelcome-screen")
+            console.log('Vishal Event Data------>>>>>>>', parsedData);
             console.log('Event Data-->>', parsedData.data.data)
             return;
         }
